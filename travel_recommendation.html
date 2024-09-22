@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Recommendation</title>
+        <style>
+            header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: black;
+                color: white;
+                padding-left: 15px;
+                padding-right: 15px;
+
+            }
+            nav ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                list-style: none;
+            }
+            nav ul li{
+                margin-left : 20px;
+            }
+            nav ul li a{
+                color : white;
+                font-size : 18px;
+                color : white;
+                text-decoration : none;
+            }
+
+            .search_section{
+                background-color: white;
+                height: 35px;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 15px;
+            }
+            .search_input{
+                height: -webkit-fill-available;
+                border: none;
+                border-bottom-left-radius: 15px;
+                border-top-left-radius: 15px;
+                padding-left: 15px
+            }
+
+            .search_btns{
+                margin-left: 5px;
+                background: black;
+                color: white;
+                border-radius: 15px;
+                width: 64px;
+            }
+            .hero {
+                position: relative;
+                height: 100vh;
+                background-image: url(./travel.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 0 50px;
+                gap: 125px;
+            }
+
+            .hero::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+                z-index: 1;
+            }
+
+            .hero_description {
+                position: relative;
+                z-index: 2; /* Make sure the content is above the overlay */
+                max-width: 600px; /* Limit the width of the text */
+            }
+
+            .social_list {
+                position: relative;
+                z-index: 2; /* Ensure social links are above the overlay */
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .hero_title {
+                font-size: 60px;
+                color: white;
+                line-height: 1.2;
+                margin: 0;
+            }
+
+            .hero_subtitle {
+                font-size: 18px;
+                color: white;
+                margin-top: 20px;
+            }
+
+            .social_list li{
+                margin-bottom : 20px
+            }
+            .social_list li a{
+                color : white;
+                text-decoration : none;
+                font-size : 18px;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Travel</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search_section">
+                <input type="text" class="search_input" id="search_bar">
+                <button class="search_btns" id="search-btn">search</button>
+                <button class="search_btns" id="clear-btn">clear</button>
+            </div>
+        </header>
+        <section class="hero">
+            <ul class="social_list">
+                <li>
+                    <a href="">twitter</a>
+                </li>
+                <li>
+                    <a href="">facebook</a>
+                </li>
+                <li>
+                    <a href="">Instagram</a>
+                </li>
+                <li>
+                    <a href="">Youtube</a>
+                </li>
+            </ul>
+            <div class="hero_description">
+                <h1 class="hero_title">
+                    EXPLORE DREAM DESTINATION
+                </h1>
+                <p class="hero_subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum diam urna, eget auctor lacus scelerisque quis.
+                </p>
+            </div>
+        </section>
+    </body>
+</html>

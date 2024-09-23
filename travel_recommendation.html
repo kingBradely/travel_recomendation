@@ -117,6 +117,35 @@
                 font-size : 18px;
             }
             
+
+            .search_result{
+                position: absolute;
+                right: 20%;
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                width: 303px;
+                z-index: 3;
+                top: 81px;
+                gap: 25px;
+                overflow-y: scroll;
+                height: 800px;
+            }
+            
+            .search_result .search_card{
+                background-color : white;
+                color: black;
+                border-radius : 15px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            .search_result .search_card img{
+                width : 100%;
+                border-radius : 15px;
+            }
+            .search_result .search_card .search_card_description{
+                padding: 10px;
+            }
+
             
         </style>
     </head>
@@ -140,6 +169,10 @@
                 <input type="text" class="search_input" id="search_bar">
                 <button class="search_btns" id="search-btn">search</button>
                 <button class="search_btns" id="clear-btn">clear</button>
+            </div>
+
+            <div class="search_result" id="search_result">
+                
             </div>
         </header>
         <section class="hero">
